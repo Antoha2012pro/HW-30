@@ -1,0 +1,58 @@
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    font-weight: 40
+}
+
+.container {
+    width: 1000px;
+    height: 1000px;
+    background-color: lightblue;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    animation-name: quadrat-box;
+    animation-duration: 3000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes quadrat-box {
+    0% {
+        transform: translate(10px) rotate(0deg) skew;
+        background-color: lightgreen;
+    }
+    25% {
+        transform: translate(890px, 10px) rotate(90deg);
+        background-color: lightsalmon;
+    }
+    50% {
+        transform: translate(890px, 890px) rotate(-90deg);
+        background-color: lightgoldenrodyellow;
+    }
+    75% {
+        transform: translate(10px, 890px) rotate(90deg);
+        background-color: lightpink;
+    }
+    100% {
+        transform: translate(10px, 10px) rotate(-90deg);
+        background-color: lightgreen;
+    }
+}
